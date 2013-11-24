@@ -17,10 +17,12 @@ for (var i=0; i < N; i++)
 {
 if (arr[i] == true) 
 {
-str = str + i + ",";
+str = str + i;
 cnt100++;
-}
+
 if (cnt100 >= 100) break;
+else str = str + ",";
+}
 };
 console.log(str);
 }
